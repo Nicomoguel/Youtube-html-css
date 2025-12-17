@@ -56,6 +56,7 @@
 .search-icon {
   width: 25px;
   margin-top: 4px;
+  cursor: pointer;
 }
 .voice-button{
   height: 40px;
@@ -63,20 +64,24 @@
   border-radius: 20px;
   border-width: 0px;
   border-color: rgb(233, 233, 233);
+  cursor: pointer;
 }
 .voice-icon {
   height: 24px;
   padding-top: 3px;
+  cursor: pointer;
 }
 
 .ham-menu {
   height: 24px;
   margin-left: 24px;
   margin-right: 24px;
+  cursor: pointer;
 }
 
 .yt-logo {
   height: 20px;
+  cursor: pointer;
 }
 .right-section {
   width: 200px;
@@ -88,16 +93,20 @@
 }
 .upload-icon{
   height: 25px;
+  cursor: pointer;
 }
 .apps-icon{
   height: 25px;
+  cursor: pointer;
 }
 .noti-icon{
   height: 25px;
+  cursor: pointer;
 }
 .channel-icon{
   height: 35px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .noti-icon-container{
   position: relative;
