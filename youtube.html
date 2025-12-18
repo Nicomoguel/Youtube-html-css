@@ -11,28 +11,41 @@
     <link rel="stylesheet" href="styles/sidebar.css">    
     </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <img class="ham-menu" src="Icons/hamburger-menu.svg">
-        <img class="yt-logo" src="Icons/youtube-logo.svg">
+        <a class="video-link" href="https://www.youtube.com/">
+          <img class="yt-logo" src="Icons/youtube-logo.svg">
+        </a>
+        
       </div>
       <div class="middle-section">
         <input class="searchbar" type="textbox" placeholder="Search">
-        <button class="search-button"><img class="search-icon" src="Icons/search.svg"></button>
-        <button class="voice-button"><img class="voice-icon" src="Icons/voice-search-icon.svg"></button>
+        <button class="search-button"><img class="search-icon" src="Icons/search.svg">
+        <div class="tooltip">Search</div></button>
+        <button class="voice-button"><img class="voice-icon" src="Icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div></button>
+        </button>
       </div>
       <div class="right-section">
-        <img class="upload-icon" src="Icons/upload.svg">
-        <img class="apps-icon" src="Icons/youtube-apps.svg">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="Icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="apps-icon-container">
+          <img class="apps-icon" src="Icons/youtube-apps.svg">
+          <div class="tooltip">YouTube Apps</div>
+        </div>
         <div class="noti-icon-container">
           <img class="noti-icon" src="Icons/notifications.svg">
           <div class="noti-count">3</div>
+          <div class="tooltip">Notifications</div>
         </div>
-        <img class="channel-icon" src="channels/my-channel.jpeg">
+        <img class="channel-icon" src="channels/604a0cf35a6e7170ad9c454070c617f5.jpg">
       </div>
-    </div>
+    </header>
 
-    <div class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-link">
         <img src="Icons/home.svg">
         <div>Home</div>
@@ -57,207 +70,234 @@
         <img src="Icons/library.svg">
         <div>Library</div>
       </div>
-    </div>
-
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-          <div class="time">
-            14:20
+    </nav>
+    <!--COMMENT-->
+    <main>
+      <section class="video-grid">
+        <a class="video-link" href="https://www.youtube.com/watch?v=XMPV9Dg4DKg">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/hqdefault3.avif">
+              <div class="time">
+                12:17
+              </div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/unnamed.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">El reto de pobre a millonario - Cosas que no sabías</p>
+                <p class="video-author">Tri-Line</p>
+                <p class="video-stats">1.2M views · 4 months ago</p>
+              </div>
+            </div>
           </div>
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=gqwkG4W5Xm0">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnailify.com_youtube_thumbnail_Full_HD_2025-12-17_20-30-22.jpg">
+              <div class="time">8:22</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channels4_profile5.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">i went to the dubai they try to hide</p>
+                <p class="video-author">BENOFTHEWEEK</p>
+                <p class="video-stats">5.3M views · 1 month ago</p>
+              </div>
+            </div>
         </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channel-1.jpeg">
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+              <div class="time">9:13</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channel-3.jpeg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p>
+                <p class="video-author">SSSniperWolf</p>
+                <p class="video-stats">12M views · 1 year ago</p>
+              </div>
+            </div>
           </div>
-          <div class="video-info">
-            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-            <p class="video-author">Marques Brownlee</p>
-            <p class="video-stats">3.4M views · 6 months ago</p>
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+              <div class="time">22:09</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channel-4.jpeg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+                <p class="video-author">Veritasium</p>
+                <p class="video-stats">44M views · 4 years ago</p>
+              </div>
+            </div>
           </div>
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+              <div class="time">11:17</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channel-5.jpeg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">
+                  Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+                <p class="video-author">CS Dojo</p>
+                <p class="video-stats">766K views · 9 years ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+              <div class="time">19:59</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channel-6.jpeg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">Anything You Can Fit In The Circle I’ll Pay For</p>
+                <p class="video-author">MrBeast</p>
+                <p class="video-stats">329M views · 5 years ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=Xzv84ZdtlE0&t=704s">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/hq720.avif">
+              <div class="time">
+                32:52
+              </div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channel-4.jpeg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">The Man Who Gave us the Power To Destroy Ourselves (Oppenheimer)</p>
+                <p class="video-author">Veritasium</p>
+                <p class="video-stats">17M views · 2 years ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=KW80Yjib7RA">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/hq720 (1).avif">
+              <div class="time">11:48</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channels4_profile.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">What does Oracle actually do?</p>
+                <p class="video-author">Good Work</p>
+                <p class="video-stats">1.3M views · 1 month ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=Rb8e1H4hMFQ&t=1s">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/hq7200.avif">
+              <div class="time">9:13</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channels4_profile1.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">Computer science students need to hear this</p>
+                <p class="video-author">Lattice</p>
+                <p class="video-stats">417k views · 3 months ago</p>
+              </div>
+            </div>
         </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-          <div class="time">8:22</div>
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=hwfu9a2E1UI&t=2s">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/hqdefault.avif">
+              <div class="time">14:28</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channels4_profile2.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">My Salary & How I Got A Software Engineering Job In 2025</p>
+                <p class="video-author">Erik Cupsa</p>
+                <p class="video-stats">162k views · 5 months ago</p>
+              </div>
+            </div>
         </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channel-2.jpeg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">Try Not To Laugh Challenge #9</p>
-            <p class="video-author">Markiplier</p>
-            <p class="video-stats">19M views · 4 years ago</p>
-          </div>
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=hajN9qEpmKY">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/hqdefault1.avif">
+              <div class="time">11:17</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channels4_profile3.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">I Tried Getting Accepted Into Harvard</p>
+                <p class="video-author">Nicolas Berndt</p>
+                <p class="video-stats">431k views · 2 months ago</p>
+              </div>
+            </div>
         </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
-          <div class="time">9:13</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channel-3.jpeg">
+        </a>
+        <a class="video-link" href="https://www.youtube.com/watch?v=XK9WVRErnBQ">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/hqdefault2.avif">
+              <div class="time">26:58</div>
+            </div>
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <img class="profile-picture" src="channels/channels4_profile4.jpg">
+              </div>
+              <div class="video-info">
+                <p class="video-title">Day in the Life of a pro footballer: Erling Haaland</p>
+                <p class="video-author">Erling Haaland</p>
+                <p class="video-stats">7.8M views · 1 month ago</p>
+              </div>
+            </div>
           </div>
-          <div class="video-info">
-            <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p>
-            <p class="video-author">SSSniperWolf</p>
-            <p class="video-stats">12M views · 1 year ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
-          <div class="time">22:09</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channel-4.jpeg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
-            <p class="video-author">Veritasium</p>
-            <p class="video-stats">18M views · 4 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
-          <div class="time">11:17</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channel-5.jpeg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Kadane's Algorithm to Maximum Sum Subarray Problem</p>
-            <p class="video-author">CS Dojo</p>
-            <p class="video-stats">519K views · 5 years ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
-          <div class="time">19:59</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channel-6.jpeg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">Anything You Can Fit In The Circle I’ll Pay For</p>
-            <p class="video-author">MrBeast</p>
-            <p class="video-stats">141M views · 1 year ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hq720.avif">
-          <div class="time">
-            32:52
-          </div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channel-4.jpeg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">The Man Who Gave us the Power To Destroy Ourselves (Oppenheimer)</p>
-            <p class="video-author">Veritasium</p>
-            <p class="video-stats">17M views · 2 years ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hq720 (1).avif">
-          <div class="time">11:48</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channels4_profile.jpg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">What does Oracle actually do?</p>
-            <p class="video-author">Good Work</p>
-            <p class="video-stats">1.3M views · 1 month ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hq7200.avif">
-          <div class="time">9:13</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channels4_profile1.jpg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">Computer science students need to hear this</p>
-            <p class="video-author">Lattice</p>
-            <p class="video-stats">417k views · 3 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hqdefault.avif">
-          <div class="time">14:28</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channels4_profile2.jpg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">My Salary & How I Got A Software Engineering Job In 2025</p>
-            <p class="video-author">Erik Cupsa</p>
-            <p class="video-stats">162k views · 5 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hqdefault1.avif">
-          <div class="time">11:17</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channels4_profile3.jpg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">I Tried Getting Accepted Into Harvard</p>
-            <p class="video-author">Nicolas Berndt</p>
-            <p class="video-stats">431k views · 2 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hqdefault2.avif">
-          <div class="time">26:58</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channels/channels4_profile4.jpg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">Day in the Life of a pro footballer: Erling Haaland</p>
-            <p class="video-author">Erling Haaland</p>
-            <p class="video-stats">7.8M views · 1 month ago</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        </a>
+        
+      </section>
+    </main>
   </body>
 </html>
